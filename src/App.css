@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(206, 209, 212);
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #333333;
+}
+
+.dropdown-menu > a:hover,
+.dropdown-menu > a:focus {
+  background-image: none !important;
+}
+.dropdown-menu > a:hover,
+.dropdown-menu > a:focus {
+  background-color: #212529;
+}
+
+.left-side,
+.right-side {
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+
+.split-items .list-group-item.left-side {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.split-items .list-group-item.right-side {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 4px;
+}
+
+a {
+  background-color: transparent;
+  color: white;
+}
+
+#mainBlock {
+  background-color: #212529;
+}
+#mainBlock:hover {
+  background-color: #616161;
+}
+
+a:hover {
+  color: white;
+}
+
+#specialDiv {
+  height: 475px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#headerList {
+  background-color: #e9ecef;
+  color: #495057;
+  font-weight: bold;
+}
+
+#specialButton {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#specialButton:hover {
+  background-color: #e9ecef; /* Green */
+  color: #495057;
+}
