@@ -8,11 +8,11 @@ To view the application we are going to build beforehand, if you are familiar wi
 
 ### Prerequisites
 
-    1. Create a Firebase project [Firebase Console](https://console.firebase.google.com) => Click + Add Project => Follow along...
+1. Create a Firebase project [Firebase Console](https://console.firebase.google.com) => Click + Add Project => Follow along...
 
-    2. Create a Storage Bucket and allow appropriate rules. [docs](https://firebase.google.com/docs/storage/web/start)
+2. Create a Storage Bucket and allow appropriate rules. [docs](https://firebase.google.com/docs/storage/web/start)
 
-    3. Create a ReactJS application and register the app in Firebase Console. [docs](https://firebase.google.com/docs/web/setup)
+3. Create a ReactJS application and register the app in Firebase Console. [docs](https://firebase.google.com/docs/web/setup)
 
 Lets move on to the real deal...
 
