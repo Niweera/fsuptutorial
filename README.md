@@ -2,6 +2,10 @@
 
 > Upload images to the Google Cloud Storage with ReactJS, Firebase SDK and Firestore
 
+To view the application we are going to build beforehand, if you are familiar with `Heroku` just click the `Heroku Button`.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ### Prerequisites
 
     1. Create a Firebase project [Firebase Console](https://console.firebase.google.com) => Click + Add Project => Follow along...
