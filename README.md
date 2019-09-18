@@ -48,7 +48,7 @@ Now that you have created the Firebase config object let's move on to the ReactJ
 
 For demonstration purposes, I'll use a single page with a header and a fixed footer and inside the page an image placeholder and file upload button.
 
-For my ease, I'll be using (Bootstrap)[https://getbootstrap.com/]
+For my ease, I'll be using [Bootstrap](https://getbootstrap.com/)
 
 Now let's move onto creating the basic components for our App.
 
