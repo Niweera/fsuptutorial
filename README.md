@@ -1,4 +1,4 @@
-# FSUPTUTORIAL
+# Upload images => Firestore + Google Cloud Storage + ReactJS
 
 > Upload images to the Google Cloud Storage with ReactJS, Firebase SDK and Firestore
 
