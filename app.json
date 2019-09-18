@@ -1,0 +1,7 @@
+{
+  "name": "fsuptutorial",
+  "description": "Upload images to the Google Cloud Storage with ReactJS, Firebase SDK and Firestore",
+  "repository": "https://github.com/Niweera/fsuptutorial",
+  "logo": "https://wh.niweera.gq/favicon.ico",
+  "keywords": ["reactjs", "firebase", "static", "firestore"]
+}
