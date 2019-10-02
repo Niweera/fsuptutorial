@@ -22,6 +22,7 @@ Create a folder inside /src/ as config => `/src/config`
 
 Add the following lines to config.js inside config folder.
 
+```javascript
     import * as firebase from "firebase";
 
     const config = {
@@ -45,6 +46,7 @@ Add the following lines to config.js inside config folder.
     // Create a storage reference from our storage service
     export const storageRef = storage.ref();
     export const database = firebase.firestore();
+``` 
 
 To get the `config` object => Go to Settings of Firebase project and look for `Your apps` section.
 
@@ -64,6 +66,7 @@ Now set up the Redux `store`
 
 `/src/store.js`
 
+```javascript
     import { createStore, applyMiddleware, compose } from "redux";
     import thunk from "redux-thunk";
     import rootReducer from "./reducers";
@@ -94,11 +97,13 @@ Now set up the Redux `store`
     //this setting is used to avoid the error in non redux extension installed browsers
 
     export default store;
+```
 
 Now create `rootReducer` file
 
 `/src/reducers/index.js`
 
+```javascript
     import { combineReducers } from "redux";
     import itemReducer from "./itemReducer";
     import { firebaseReducer } from "react-redux-firebase";
@@ -168,6 +173,7 @@ Now create `rootReducer` file
         return state;
     }
     }
+```
 
 Now we are done with the reducer stuff;
 
@@ -177,17 +183,20 @@ First we have to declare the action types.
 
 `/src/actions/types.js`
 
+```javascript
     export const UPLOADING_START = "UPLOADING_START";
     export const UPLOADING_SUCCESS = "UPLOADING_SUCCESS";
     export const UPLOADING_FAIL = "UPLOADING_FAIL";
     export const UPLOADING = "UPLOADING";
 
     export const GET_DATA = "GET_DATA";
+```
 
 Now the `itemActions.js`
 
 `/src/actions/itemActions.js`
 
+```javascript
     //import action types
     import {
     UPLOADING_START,
@@ -298,6 +307,7 @@ Now the `itemActions.js`
         console.log(e);
     }
     };
+```
 
 Now we are done with the reducer actions stuff.
 
@@ -309,6 +319,7 @@ Now let's set up `App.js` and without this you won't be able to render anything.
 
 `/src/App.js`
 
+```javascript
     import React from "react";
     import "./App.css";
     import MainComponent from "./HOC/MainComponent";
@@ -338,11 +349,13 @@ Now let's set up `App.js` and without this you won't be able to render anything.
     }
 
     export default App;
+```
 
 Now let's move on to the most important part.
 
 Now create `/src/HOC/MainComponent.js` this MainComponent.js will contain the image upload button and other related components.
 
+```javascript
     import React, { Component } from "react";
     import { uploadImage, getData } from "../actions/itemActions";
     import Spinner from "../helpers/Spinner";
@@ -574,6 +587,7 @@ Now create `/src/HOC/MainComponent.js` this MainComponent.js will contain the im
     mapStateToProps,
     mapDispatchToProps
     )(withRouter(MainComponent));
+```
 
 Now we are done. Let's try out uploading...
 
